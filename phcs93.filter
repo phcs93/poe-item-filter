@@ -1,0 +1,170 @@
+# made by phcs93
+
+# ===========================
+# currency
+# ===========================
+
+# scrolls
+Show
+    BaseType "Scroll of Wisdom" "Portal Scroll"
+    SetBorderColor 0 0 0
+    SetBackgroundColor 170 158 130
+    SetTextColor 0 0 0
+    SetFontSize 30    
+    MinimapIcon 2 White Circle
+    
+# low
+Show
+    BaseType "Orb of Transmutation" "Orb of Alteration" "Orb of Augmentation" "Armourer's Scrap" "Blacksmith's Whetstone"
+    SetBorderColor 0 0 0
+    SetBackgroundColor 170 158 130
+    SetTextColor 0 0 0
+    SetFontSize 35
+    MinimapIcon 2 Brown Circle
+    
+# medium
+Show
+    BaseType "Orb of Fusing" "Orb of Alchemy" "Gemcutter's Prism" "Chromatic Orb" "Jeweller's Orb" "Orb of Chance" "Cartographer's Chisel" "Orb of Scouring" "Orb of Regret"
+    SetBorderColor 0 0 0
+    SetBackgroundColor 170 158 130
+    SetTextColor 0 0 0
+    SetFontSize 40
+    MinimapIcon 1 Orange Circle
+    PlayAlertSound 2 300
+    PlayEffect Orange
+
+# high
+Show
+    Class "Currency"
+    SetBorderColor 255 255 119
+    SetBackgroundColor 255 255 119
+    SetTextColor 0 0 0
+    SetFontSize 45
+    MinimapIcon 0 Yellow Circle
+    PlayAlertSound 6 300
+    PlayEffect Yellow
+
+# ===========================
+# specific items
+# ===========================
+
+# unique
+Show
+    Rarity Unique    
+    SetBorderColor 150 0 0
+    SetBackgroundColor 150 0 0
+    SetTextColor 255 255 119
+    SetFontSize 45
+    MinimapIcon 0 Red Circle
+    PlayAlertSound 5 300
+    PlayEffect Red
+
+# jewels / cards / maps
+Show
+    Class "Jewel" "Card" "Map"
+    SetBorderColor 255 150 200
+    SetBackgroundColor 255 150 200
+    SetTextColor 0 0 0
+    SetFontSize 45
+    MinimapIcon 0 Pink Circle
+    PlayAlertSound 4 300
+    PlayEffect Pink
+    
+# cards and maps
+Show
+    BaseType "Gold Flask"
+    SetBorderColor 255 0 0
+    SetBackgroundColor 255 0 0
+    SetTextColor 255 255 255
+    SetFontSize 45
+    MinimapIcon 0 Red Circle
+    PlayAlertSound 4 300
+    PlayEffect Red
+
+# ===========================
+# chaos recipe
+# ===========================
+
+# amulets and rings
+Show
+    Class "Amulet" "Ring"
+    Rarity Rare 
+    ItemLevel >= 60
+    Identified False
+    SetBorderColor 255 255 119
+    SetBackgroundColor 255 255 119
+    SetTextColor 0 0 0
+    SetFontSize 45
+    MinimapIcon 0 Yellow Circle
+    PlayAlertSound 6 300
+    PlayEffect Yellow
+    
+# rest
+Show
+    Rarity Rare 
+    ItemLevel >= 60
+    Identified False
+    SetBorderColor 255 255 119
+    SetBackgroundColor 0 0 0
+    SetTextColor 255 255 119
+    SetFontSize 30
+    MinimapIcon 2 Yellow Circle
+
+# ===========================
+# vendor recipes
+# ===========================
+
+# 6 links
+Show
+    LinkedSockets 6
+    SetBorderColor 74 230 58
+    SetBackgroundColor 74 230 58
+    SetTextColor 0 0 0
+    SetFontSize 45
+    MinimapIcon 0 Green Circle
+    PlayAlertSound 6 300
+    PlayEffect Green 
+
+# 6 sockets
+Show
+    Sockets 6
+    SetBorderColor 136 136 255
+    SetBackgroundColor 136 136 255
+    SetTextColor 0 0 0
+    SetFontSize 45
+    MinimapIcon 0 Blue Circle
+    PlayAlertSound 6 300
+    PlayEffect Blue
+    
+# 3 color linked sockets
+Show
+    SocketGroup RGB
+    SetBorderColor 150 50 200 
+    SetBackgroundColor 150 50 200
+    SetTextColor 0 0 0
+    SetFontSize 40
+    MinimapIcon 0 Purple Circle
+    PlayAlertSound 2 300
+    PlayEffect Purple
+    
+# quality flasks
+Show
+    Class "Flasks"
+    Quality > 0
+    SetBorderColor 0 200 200
+    SetBackgroundColor 0 200 200
+    SetTextColor 0 0 0
+    SetFontSize 35
+    MinimapIcon 1 Cyan Circle
+    PlayEffect Cyan
+    
+# quality gems
+Show
+    Class "Gems"
+    Quality > 0    
+    SetBorderColor 0 200 200
+    SetBackgroundColor 0 200 200
+    SetTextColor 0 0 0
+    SetFontSize 35
+    MinimapIcon 1 Cyan Circle
+    PlayEffect Cyan
