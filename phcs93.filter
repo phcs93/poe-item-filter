@@ -15,7 +15,7 @@ Show
     
 # low
 Show
-    BaseType "Orb of Transmutation" "Orb of Alteration" "Orb of Augmentation" "Armourer's Scrap" "Blacksmith's Whetstone"
+    BaseType "Orb of Transmutation" "Armourer's Scrap" "Blacksmith's Whetstone"
     SetBorderColor 0 0 0
     SetBackgroundColor 170 158 130
     SetTextColor 0 0 0
@@ -24,7 +24,7 @@ Show
     
 # medium
 Show
-    BaseType "Orb of Fusing" "Orb of Alchemy" "Gemcutter's Prism" "Chromatic Orb" "Jeweller's Orb" "Orb of Chance" "Cartographer's Chisel" "Orb of Scouring" "Orb of Regret"
+    BaseType "Orb of Alteration" "Orb of Fusing" "Chromatic Orb" "Orb of Alchemy" "Jeweller's Orb" "Orb of Chance" "Orb of Augmentation"
     SetBorderColor 0 0 0
     SetBackgroundColor 170 158 130
     SetTextColor 0 0 0
@@ -33,7 +33,7 @@ Show
     PlayAlertSound 2 300
     PlayEffect Orange
 
-# high
+# high (all other currency because I'm lazy)
 Show
     Class "Currency"
     SetBorderColor 255 255 119
