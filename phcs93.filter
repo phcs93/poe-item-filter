@@ -15,7 +15,7 @@ Show
     
 # low
 Show
-    BaseType "Orb of Transmutation" "Armourer's Scrap" "Blacksmith's Whetstone"
+    BaseType "Orb of Transmutation" "Armourer's Scrap" "Blacksmith's Whetstone" "Transmutation Shard"
     SetBorderColor 0 0 0
     SetBackgroundColor 170 158 130
     SetTextColor 0 0 0
@@ -24,7 +24,7 @@ Show
     
 # medium
 Show
-    BaseType "Orb of Alteration" "Orb of Fusing" "Chromatic Orb" "Orb of Alchemy" "Jeweller's Orb" "Orb of Chance" "Orb of Augmentation"
+    BaseType "Orb of Alteration" "Orb of Fusing" "Chromatic Orb" "Orb of Alchemy" "Jeweller's Orb" "Orb of Chance" "Orb of Augmentation" "Alteration Shard" "Alchemy Shard"
     SetBorderColor 0 0 0
     SetBackgroundColor 170 158 130
     SetTextColor 0 0 0
@@ -70,7 +70,7 @@ Show
     PlayAlertSound 4 300
     PlayEffect Pink
     
-# cards and maps
+# gold flask (1 chaos)
 Show
     BaseType "Gold Flask"
     SetBorderColor 255 0 0
@@ -80,14 +80,18 @@ Show
     MinimapIcon 0 Red Circle
     PlayAlertSound 4 300
     PlayEffect Red
+    
+# drop only gems
+Show
+    BaseType Enlighten Enhance Empower
 
 # ===========================
 # chaos recipe
 # ===========================
 
-# amulets and rings
+# amulets, rings and belts
 Show
-    Class "Amulet" "Ring"
+    Class "Amulet" "Ring" "Belt"
     Rarity Rare 
     ItemLevel >= 60
     Identified False
@@ -168,3 +172,42 @@ Show
     SetFontSize 35
     MinimapIcon 1 Cyan Circle
     PlayEffect Cyan
+
+# ===========================
+# other stuff
+# ===========================
+
+Show
+    HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
+Show
+	AlternateQuality True
+Show
+	Replica True
+Show
+	Identified True
+Show
+	Corrupted True
+Show
+	ElderItem True
+Show
+	ShaperItem True
+Show
+	FracturedItem True
+Show
+    SynthesisedItem True
+Show
+    BlightedMap True
+Show
+    HasCruciblePassiveTree True
+    
+# ===========================
+# hide
+# ===========================
+ 
+# white equipment
+Hide
+    Rarity Normal
+Hide
+    Rarity Magic
+Hide
+    Rarity Rare
